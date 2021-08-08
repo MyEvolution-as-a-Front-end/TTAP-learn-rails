@@ -1,0 +1,9 @@
+<h2>Article details</h2>
+
+<% if @article.present? %>
+  <h3><%= @article.title %></h3>
+  <p><%= @article.body %></p>
+<% else %>
+  <p>No article found.</p>
+<% end %>
+
