@@ -3,5 +3,8 @@ Rails.application.routes.draw do
 
   # get "/articles", to: "articles#index"
   # get "/articles/:id", to: "articles#show"
-  resources :articles
+  # get "/articles/comments/new", to: "comments#new"
+  resources :articles do
+    resources :comments
+  end
 end
